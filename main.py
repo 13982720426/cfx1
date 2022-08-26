@@ -57,6 +57,10 @@ client = WeChatClient(app_id, app_secret)
 wm = WeChatMessage(client)
 wea, temperature, lastUpdateTime, low, high, humidity, wind = get_weather()
 data = {
+  "text":{
+    "value":'今天也要加油呀！',
+    "color":'#fe0000'
+  },
   "city":{
     "value":city,
   },
